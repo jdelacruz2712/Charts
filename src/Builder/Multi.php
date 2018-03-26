@@ -41,11 +41,12 @@ class Multi extends Chart
      *
      * @return Multi
      */
-    public function dataset($element_label, $values)
+    public function dataset($element_label, $values, $color)
     {
         $this->datasets[] = [
             'label' => $element_label,
             'values' => $values,
+            'color' => $color,
         ];
 
         return $this;
